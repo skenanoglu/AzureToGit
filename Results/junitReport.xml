@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="collection_variable_test" tests="2" time="4.867">
+  <testsuite name="/api/TokenAuth/Verify Copy" id="b717fdaa-7430-4f79-b3f7-0d94a1aec31c" timestamp="2022-12-12T10:24:37.229Z" tests="2" failures="1" errors="0" time="0.660">
+    <testcase name="Status code is 200" time="0.660" classname="CollectionVariableTest"/>
+    <testcase name="Response time is less than 500ms" time="0.660" classname="CollectionVariableTest">
+      <failure type="AssertionFailure" message="expected 660 to be below 500">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 923f4dee-3b8b-4892-b747-d871a9a32bc5.]]>
+        <![CDATA[Collection name: collection_variable_test.]]>
+        <![CDATA[Request name: /api/TokenAuth/Verify Copy.]]>
+        <![CDATA[Test description: Response time is less than 500ms.]]>
+        <![CDATA[Error message: expected 660 to be below 500.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 660 to be below 500
+   at Object.eval sandbox-script.js:2:1).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="/api/TokenAuth/Authenticate Copy" id="ed47f2d4-d7ae-4536-868f-55f9b74ab1a4" timestamp="2022-12-12T10:24:37.229Z" tests="2" failures="1" errors="0" time="4.207">
+    <testcase name="Status code is 200" time="4.207" classname="CollectionVariableTest"/>
+    <testcase name="Response time is less than 500ms" time="4.207" classname="CollectionVariableTest">
+      <failure type="AssertionFailure" message="expected 4207 to be below 500">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 923f4dee-3b8b-4892-b747-d871a9a32bc5.]]>
+        <![CDATA[Collection name: collection_variable_test.]]>
+        <![CDATA[Request name: /api/TokenAuth/Authenticate Copy.]]>
+        <![CDATA[Test description: Response time is less than 500ms.]]>
+        <![CDATA[Error message: expected 4207 to be below 500.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 4207 to be below 500
+   at Object.eval sandbox-script.js:2:2).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+</testsuites>

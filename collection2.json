@@ -1,0 +1,228 @@
+{
+	"info": {
+		"_postman_id": "923f4dee-3b8b-4892-b747-d871a9a32bc5",
+		"name": "collection_variable_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24603451"
+	},
+	"item": [
+		{
+			"name": "/api/TokenAuth/Verify Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.globals.set(\"sessionToken\", pm.response.json().result.sessionToken);\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json;odata.metadata=minimal;odata.streaming=true"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userCredential\": \"admin\",\n  \"password\": \"123Qwe.\",\n  \"authType\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/TokenAuth/Verify",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"TokenAuth",
+						"Verify"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"userCredential\": \"veniam commodo ad in aliquip\",\n  \"password\": \"in Ut fugiat ullamco c\",\n  \"authType\": {\n    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n  },\n  \"sessionToken\": \"non\",\n  \"code\": \"irure anim pariatur aliquip\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/TokenAuth/Verify",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"TokenAuth",
+								"Verify"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;odata.metadata=minimal;odata.streaming=true"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"success\": false,\n  \"nextStep\": {\n    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n  },\n  \"sessionToken\": \"eu consequat sunt\",\n  \"googleAuthenticatorQRCodeUrl\": \"consectetur reprehenderit Duis eu occaecat\",\n  \"message\": \"minim dolore\"\n}"
+				}
+			]
+		},
+		{
+			"name": "/api/TokenAuth/Authenticate Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.globals.set(\"accesToken\", pm.response.json().result.accessToken);\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+							"});\r",
+							"\r",
+							"pm.globals.set(\"calisiyorMu\",\"calisiyor\");\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json;odata.metadata=minimal;odata.streaming=true"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"password\": \"123Qwe.\",\n  \"sessionToken\": \"{{sessionToken}}\",\n  \"userCredential\": \"admin\",\n  \"rememberClient\": true,\n  \"authType\": 1\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/TokenAuth/Authenticate",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"TokenAuth",
+						"Authenticate"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"password\": \"et pro\",\n  \"userCredential\": \"ipsum\",\n  \"sessionToken\": \"cons\",\n  \"rememberClient\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/TokenAuth/Authenticate",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"TokenAuth",
+								"Authenticate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;odata.metadata=minimal;odata.streaming=true"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"userId\": 10804273,\n  \"accessToken\": \"deserunt ex do\",\n  \"refreshToken\": \"Duis magna in incididunt\",\n  \"encryptedAccessToken\": \"quis dolore occaecat\",\n  \"expireInSeconds\": -59501250\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://paybtdevframe.azurewebsites.net",
+			"type": "string"
+		}
+	]
+}

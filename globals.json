@@ -1,0 +1,105 @@
+{
+	"id": "1abdf550-a661-4f9d-802b-457ece18dd4a",
+	"values": [
+		{
+			"key": "baseUrl",
+			"value": "http://paybtdevframe.azurewebsites.net",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "sessionToken",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6IkpXVCJ9.eyJuYmYiOjE2NzAzMjAzODMsImV4cCI6MTY3MDMyMzk4MywiaXNzIjoiUGF5QlQuRGV2RnJhbWVUZW1wbGF0ZS5TZXNzaW9uIiwiYXVkIjoiUGF5QlQuRGV2RnJhbWVUZW1wbGF0ZS5TZXNzaW9uIn0.dnZAKJiI3FwbklqzpO8qLA-hsn761u5S9Dz-SOwap0k",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "accesToken",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjUxNyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6ImFkbWluQGFzcG5ldGJvaWxlcnBsYXRlLmNvbSIsIkFzcE5ldC5JZGVudGl0eS5TZWN1cml0eVN0YW1wIjoiZWZlMzU4YTktNjE5Yy0zNzI3LWIyZTktM2EwN2Y0YmVkNzdlIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJzdWIiOiI1MTciLCJqdGkiOiIwY2ZmNzhkNS01OGRhLTQwNjEtYjgyYS1hNjMxMDM1NGMzNzUiLCJpYXQiOjE2NzAzMTg4OTgsIm5iZiI6MTY3MDMxODg5OCwiZXhwIjoxNjcwMzIyNDk4LCJpc3MiOiJQYXlCVC5EZXZGcmFtZVRlbXBsYXRlIiwiYXVkIjoiUGF5QlQuRGV2RnJhbWVUZW1wbGF0ZSJ9.KgeknJICckShCMkS6d1MKA8YJmWPXhMRHBwMd2U7d38",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "xminForRole",
+			"value": 11769523,
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "idForRole",
+			"value": 100,
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "enumMasterId",
+			"value": 15,
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "responseTime",
+			"value": "500",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "cminForUser",
+			"value": null,
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "idForUser",
+			"value": 531,
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "currencyOrder",
+			"value": "9990999",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "idForCurrency",
+			"value": 57,
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "idForExchangeRate",
+			"value": 5,
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "ErrorVarmİ",
+			"value": false,
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "sahinToken",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6IkpXVCJ9.eyJuYmYiOjE2Njk5NzQ4MDAsImV4cCI6MTY2OTk3ODQwMCwiaXNzIjoiUGF5QlQuRGV2RnJhbWVUZW1wbGF0ZS5TZXNzaW9uIiwiYXVkIjoiUGF5QlQuRGV2RnJhbWVUZW1wbGF0ZS5TZXNzaW9uIn0.EoMs-_3Z0WeWbwEyWyu4Z7vBsxYYnuFbHmXvtiJtnuM",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "ahmetToken",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6IkpXVCJ9.eyJuYmYiOjE2Njk5NzQ4MjcsImV4cCI6MTY2OTk3ODQyNywiaXNzIjoiUGF5QlQuRGV2RnJhbWVUZW1wbGF0ZS5TZXNzaW9uIiwiYXVkIjoiUGF5QlQuRGV2RnJhbWVUZW1wbGF0ZS5TZXNzaW9uIn0.O0nto8pv82yGGZ2tp2qjcJ0_BkOgc0LXk4cL1KXMHeE",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "sayac",
+			"value": "asdasdasdaksdjh",
+			"type": "any",
+			"enabled": true
+		}
+	],
+	"name": "Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2022-12-08T08:41:32.224Z",
+	"_postman_exported_using": "Postman/10.5.8"
+}
